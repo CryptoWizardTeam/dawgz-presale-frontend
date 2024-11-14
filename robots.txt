@@ -1,0 +1,20 @@
+# All web crawlers are allowed to access the entire site
+User-agent: *
+Disallow:
+
+# Block all web crawlers from accessing specific directories (if any)
+# Example:
+# Disallow: /private/
+# Disallow: /admin/
+
+# Allow all web crawlers to access the public assets
+User-agent: *
+Allow: /assets/
+
+# Block specific crawlers if needed
+# Example:
+# User-agent: BadBot
+# Disallow: /
+
+# Specify the location of the sitemap
+Sitemap: https://dawgz.ai/sitemap.xml
